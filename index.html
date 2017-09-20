@@ -26,6 +26,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="lib/chosen/chosen.jquery.min.js" ></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
 
     <script>
       var config = {
@@ -135,8 +136,29 @@
       <a href="#" class="modal__close">Cerrar</a>
       <div class="modal__container">
         <h2>Públicar Forma de Ayuda</h2>
-        <p>Envía la información del método de ayuda con toda la información pertinente como: A quién se ayuda, Desde dónde se puede ayudar, que tipo de ayuda necesitan. desde los siguientes medios de contacto:</p>
-        <a href="https://twitter.com/comoayudarmx" target="_blank" class="modal__button"><i class="fa fa-twitter"></i>@comoayudarmx</a> o <a class="modal__email" href="mailto:comoayudarmx@gmail.com">comoayudarmx@gmail.com</a>
+        <div class="modal__form">
+          <form action="" class="modal__form">
+            <div class="modal__form__item">
+              <input placeholder="¿A quién se ayuda?" type="text" name="title">
+            </div>
+            <div class="modal__form__item">
+              <textarea placeholder="Descripción" name="description"></textarea>
+            </div>
+            <div class="modal__form__item">
+              <input type="text" placeholder="¿Desde dónde se puede ayudar?" name="location">
+            </div>
+            <div class="modal__form__item">
+              <input id="help_type" type="text" type="text" placeholder="¿Qué tipo de ayuda?" name="type">
+            </div>
+            <div class="modal__form__item">
+              <input type="text" placeholder="¿Algúna liga donde haya más información?" name="link">
+            </div>
+            <div>
+              <button class="modal__button">Públicar</button>
+            </div>
+          </form>
+        </div>
+        <a href="https://twitter.com/comoayudarmx" target="_blank" class="modal__email"><i class="fa fa-twitter"></i>@comoayudarmx</a> o <a class="modal__email" href="mailto:comoayudarmx@gmail.com">comoayudarmx@gmail.com</a>
       </div>
     </section>
 
